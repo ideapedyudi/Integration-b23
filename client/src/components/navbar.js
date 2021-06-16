@@ -5,7 +5,6 @@ import { UserContext } from "../contexts/userContext"
 
 import {Navbar, Container, Nav, Button} from 'react-bootstrap'
 
-
 export default function NavbarComp() {
     const [state, dispatch] = useContext(UserContext);
 
@@ -28,6 +27,7 @@ export default function NavbarComp() {
                         <Nav.Link as={Link} to="/about">About</Nav.Link>
                         <Nav.Link as={Link} to="/axios">Axios</Nav.Link>
                         <Nav.Link as={Link} to="/react-query">React Query</Nav.Link>
+                        <Nav.Link as={Link} to="/product">Product</Nav.Link>
                     </Nav>
                     <Nav className="ms-auto">
                         <small className="mt-1 me-3">{state.user.email}</small>

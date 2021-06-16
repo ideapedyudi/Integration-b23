@@ -1,5 +1,5 @@
 import {Container,Button} from 'react-bootstrap'
-
+import { useHistory } from "react-router-dom";
 import { useState } from 'react';
 
 import ModalAuth from '../components/modals/ModalAuth'
@@ -7,7 +7,6 @@ import ModalAuth from '../components/modals/ModalAuth'
 import img from '../assets/auth.svg'
 
 export default function Auth() {
-
     const [show, setShow] = useState(false);
     const [title, setTitle] = useState('');
 

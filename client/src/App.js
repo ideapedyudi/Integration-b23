@@ -10,6 +10,7 @@ import About from './pages/About'
 import Auth from './pages/Auth'
 import Axios from './pages/Axios'
 import ReactQuery from './pages/ReactQuery'
+import Product from './pages/Product'
 
 import { API, setAuthToken } from './config/api'
 
@@ -69,6 +70,7 @@ function App() {
                     <Route  path="/about" component={About} />
                     <Route  path="/axios" component={Axios} />
                     <Route  path="/react-query" component={ReactQuery} />
+                    <Route  path="/product" component={Product} />
                 </div>
                 <Route path="/auth" component={Auth} />
               </>
